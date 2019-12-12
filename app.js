@@ -50,6 +50,7 @@ document.getElementById("snap").addEventListener("click", function() {
         td.setAttribute("align", "center");
 
         context.beginPath();
+        context.strokeStyle = "red"
         context.rect(predictions[i].bbox[i], predictions[i].bbox[i + 1], predictions[i].bbox[i + 2], predictions[i].bbox[i + 3]);
         context.stroke();
     }
